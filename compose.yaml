@@ -1,0 +1,20 @@
+services:
+  client:
+    networks:
+      - downyt-net
+    build: ./client
+    ports:
+      - "80:80"
+    volumes:
+      - ./config:/etc/nginx:ro
+
+  server:
+    networks:
+      - downyt-net
+    build: ./server
+    ports:
+      - "5000:5000"
+
+networks:
+  downyt-net:
+    driver: bridge
