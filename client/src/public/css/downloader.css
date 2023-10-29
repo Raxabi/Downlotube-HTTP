@@ -1,0 +1,25 @@
+#button-container {
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.action-button {
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#wipe-button {
+  background-color: #a51d2a;
+}
+
+#submit-button {
+  background-color: #20af6d;
+}
+
+#title-sign {
+  color: black;
+  background-color: white;
+}
